@@ -40,5 +40,5 @@ for i in range(100000):
                         print('Bias2 ', sess.run(Bias2))
                         print('cost ', sess.run(cost, feed_dict={x_: [XOR_X[j]], y_: [XOR_Y[j]]}))
                 else:
-                      print('Hypothesis ' + j + ': ', sess.run(Hypothesis, feed_dict={x_: [XOR_X[j]], y_: [XOR_Y[j]]}))
+                      print('Hypothesis ' + str(j) + ': ', sess.run(Hypothesis, feed_dict={x_: [XOR_X[j]], y_: [XOR_Y[j]]}))
                           
